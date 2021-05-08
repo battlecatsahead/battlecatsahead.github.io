@@ -31,7 +31,17 @@ document.body.style.backgroundColor= "green";
 	</body>
 </html>
 body {
-	
+#buttonblue {
+    width: 50px;
+    height: 30px;
+    border-radius: 10px 40px;
+    box-shadow: 5px 5px;
+}
+#buttongreen {
+    width: 50px;
+    height: 30px;
+    border-radius: 10px 40px;
+    box-shadow: 5px 5px;	
 }
 #buttonblue {
     width: 50px;
@@ -51,4 +61,5 @@ body {
     height: 30px;
     border-radius: 10px 40px;
     box-shadow: 5px 5px;
+}
 }
