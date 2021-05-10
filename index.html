@@ -14,17 +14,15 @@ function clickCounter() {
     document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
   }
 }
-</script> 
-</head>
-<body>
-<p id="demo"></p>
 <script>
+  function randnum() {
 document.getElementById("demo").innerHTML =
 Math.floor(Math.random() * 10);
-</script>
-
+} 
+<script>
+ 
 <p><button onclick="clickCounter()" type="button">Click me!</button></p>
-<p><button onclick="demo" type="button">Click me!</button></p>
+<p><button onclick="demo()" type="button">Click me!</button></p>
 
   
 <div id="result"></div>
