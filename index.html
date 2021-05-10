@@ -19,7 +19,10 @@ function clickCounter() {
 <body>
 
 <p><button onclick="clickCounter()" type="button">Click me!</button></p>
-<p><button onclick="demo" type="button">random number</button></p>
+<p><button onclick= <script>
+document.getElementById("demo").innerHTML =
+Math.floor(Math.random() * 10);
+</script> type="button">random number</button></p>
   
 <div id="result"></div>
 
