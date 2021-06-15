@@ -1,27 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+<script>
+function clickCounter() {
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount) {
+      localStorage.clickcount = Number(localStorage.clickcount)+1;
+    } else {
+      localStorage.clickcount = 1;
+    }
+    document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+  } else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+  }
 }
 </script>
 
- <style>
-div.relative {
-  position: relative;
-  left: 300px;
-  top: 30px;
-  border: 3px solid #73AD21;
-}
-   <body>
-  <h1>Hello, my name is <span id="balance"></span></h1>
-  <script>
-    let bal;
-    document.getElementById("balance").innerHTML = bal;
-  </script>
-</body>
-</style>
-</head>
-<body>
 
-<div class="relative">
-This div element has position: relative;
-</div>
 
 <p><button onclick="clickCounter()" type="button">Click me!</button></p>
 <button onclick="document.getElementById('demo').innerHTML = getRndInteger(0,10)">Click Me</button>
+
+<p id="demo"></p>
+
+<script>
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+</script>
+
+<div id="result"></div>
+
+
+
+
+</body>
+</html>
